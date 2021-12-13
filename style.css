@@ -1,0 +1,219 @@
+@import 'utilities.css';
+
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondary:#070606;
+    --head:#ff0000;
+    --green:#034B03;
+}
+
+body{
+    height: 800px;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialiased;
+}
+
+header{
+    background: var(--primary);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
+}
+
+.container{
+    max-width:1000px ;
+    padding:0 15px;
+    margin:0 auto ;
+}
+
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+header nav .left a:hover{
+    color:var(--head);
+}
+
+header nav{
+    padding: 2rem 0;
+}
+
+header nav .branding{
+    margin-right: 3rem;
+}
+
+header nav .branding{
+    margin-right: 3rem;
+}
+
+.hero{
+    padding: 5rem 0;
+}
+
+.hero .left img{
+    height: 150px;
+    width: 350px;
+}
+.hero .left img{
+    margin-bottom: 4rem;
+}
+
+.hero .right{
+    color: var(--pure);
+}
+
+.hero .right h2{
+    font-size: 2rem ;
+    color: var(--head);
+    margin-bottom: 0.5rem;
+}
+
+.hero .right h1{
+    font-size: 5rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.hero .right h1 span{
+    color: var(--green);
+}
+
+.hero .right{
+    margin-top: -7rem;
+}
+
+section{
+    padding:6rem 0;
+}
+
+section.about .about-me-img{
+    height: 450px;
+}
+
+section.about h1{
+   margin-bottom: 1rem;
+   font-size: 1.6rem; 
+   font-weight: 400;
+}
+section.about h1 span{
+    color: var(--head);
+}
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+section.about p{
+    color: var(--dark);
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+
+
+section.donor h2{
+    margin-bottom: 3rem;
+    font-size: 1.6rem; 
+    font-weight: 400;
+ }
+
+ section.donor .btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+    
+}
+ 
+
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 5rem;
+    line-height: 0.5;
+}
+.section-heading span{
+    color: #ff0000;
+    
+}
+
+
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+section.contact .card-wrapper .card{
+    text-align: center;
+}
+
+section.contact .card-wrapper .card h1{
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+section.contact .card-wrapper .card h5{
+    font-size: 1rem;
+    color: var(--ternary);
+    font-weight: 400;
+}
+
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+section.contact .input-wrap-2 input{
+    margin-bottom: 1rem;
+    border: 1px solid var(--dark);
+    font-size: 0.9rem;
+}
+section.contact input{
+    padding: 0.5rem;
+    border: 1px solid var(--dark);
+    font-size: 0.9rem;
+}
+section.contact .input-wrap-2 textarea{
+    padding: 0.5rem;
+    border: 1px solid var(--dark);
+    font-size: 0.9rem;
+}
+
+section.contact .input-wrap-2 textarea{
+    outline: none;
+}
+section.contact input:focus{
+    outline: none;
+}
+
+section.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+footer{
+    background: var(--dark);
+    text-align: center;
+    color:var(--primary);
+    font-size: 3rem;
+}
